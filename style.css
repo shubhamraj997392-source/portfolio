@@ -1,0 +1,190 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Segoe UI', sans-serif;
+}
+
+body{
+  background:#0f172a;
+  color:#f1f5f9;
+  scroll-behavior:smooth; 
+  
+}
+
+header{
+  display:flex;
+  justify-content:space-between;
+  padding:20px 60px;
+  background:#ca154e;
+  position:sticky;
+  top:0;
+  border-radius: 30px;
+  height: 70px;
+  align-items: center;
+ 
+  
+}
+
+
+.logo{
+  color:#38bdf8;
+  font-size:22px;
+  font-weight:bold;
+  align-items: center;
+  
+}
+
+nav a{
+  margin-left:20px;
+  color:rgb(39, 158, 126);
+  text-decoration:none;
+  animation: forwards;
+}
+
+.home{
+  height:90vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+}
+
+.home span{
+  color:#38bdf8;
+}
+h1{
+  font-size:120px;
+  margin-bottom:20px; 
+}
+
+section{
+  padding:80px 100px;
+}
+
+h2{
+  text-align:center;
+  margin-bottom:30px;
+  color:#38bdf8;
+}
+
+.skill{
+  margin-bottom:25px;
+}
+
+.progress{
+  width:100%;
+  height:10px;
+  background:#334155;
+  border-radius:5px;
+}
+
+.progress-bar{
+  height:10px;
+  width:0;
+  background:#38bdf8;
+  border-radius:5px;
+  transition:1.5s;
+}
+
+.projects{
+  display:flex;
+  justify-content:center;
+  gap:20px;
+}
+
+.card{
+  background:#180f31;
+  padding:25px;
+  width:220px;
+  text-align:center;
+  border-radius:25px;
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-10px);
+  background:#d8c5cd;
+  box-shadow:0 0 15px #09c4b4;
+}
+
+form{
+  max-width:400px;
+  margin:auto;
+  display:flex;
+  flex-direction:column;
+}
+
+form input, textarea{
+  margin-bottom:15px;
+  padding:12px;
+  border:none;
+  border-radius: 25px;
+  background-color: palegoldenrod;
+}
+
+form button{
+  padding:12px;
+  background:#38bdf8;
+  border:none;
+  border-radius: 25px;
+}
+
+footer{
+  text-align:center;
+  padding:20px;
+  background:#020617;
+}
+
+/* animation */
+.reveal{
+  opacity:0;
+  transform:translateY(40px);
+  transition:1s;
+}
+
+.reveal.active{
+  opacity:1;
+  transform:translateY(0);
+}
+.buttons{
+  margin-top:25px;
+  display:flex;
+  gap:15px;
+  flex-wrap:wrap;
+  justify-content:center;
+}
+
+.btn.outline{
+  background:transparent;
+  color:#38bdf8;
+  border:2px solid #38bdf8;
+}
+#themeToggle{
+  background:none;
+  border:none;
+  color:white;
+  font-size:20px;
+  cursor:pointer;
+  padding: 10px;
+}
+
+.light{
+  background:#f8fafc;
+  color:#020617;
+}
+
+.light header,
+.light footer{
+  background:#e2e8f0;
+}
+
+.light .card{
+  background:white;
+  color:black;
+}
+
+.light nav a{
+  color:black;
+}
